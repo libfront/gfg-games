@@ -1,8 +1,8 @@
-const c = (r) => new Promise((t, n) => {
+const c = (n) => new Promise((t, r) => {
   const e = document.createElement("script");
-  e.src = r, e.onload = t, e.onerror = n, document.body.appendChild(e);
-}), d = async (r) => ({
-  set: async (t, n) => {
+  e.src = n, e.onload = t, e.onerror = r, document.body.appendChild(e);
+}), d = async (n) => ({
+  set: async (t, r) => {
     console.log(`--hydrator [${t.data.curr.type}]`);
     const e = {
       r: "",
@@ -10,12 +10,12 @@ const c = (r) => new Promise((t, n) => {
       //set..
       evt: {
         change: () => {
-          n?.change({ _$p: t });
+          r?.change({ _$p: t });
         }
       }
-    }, o = document.getElementById(r.f.name("root"));
+    }, o = document.getElementById(n.f.name("root"));
     return (async (a) => {
-      await c("/script/game.js"), n?.add({ $d: t.data.curr.data, el: a });
+      await c(`${n.f.path("/script/game.js")}`), r?.add({ $d: t.data.curr.data, el: a });
     })(o), e;
   }
 });
