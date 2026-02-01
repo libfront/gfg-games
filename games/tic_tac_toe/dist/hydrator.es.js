@@ -1,4 +1,4 @@
-const c = (n) => new Promise((t, r) => {
+const s = (n) => new Promise((t, r) => {
   const e = document.createElement("script");
   e.src = n, e.onload = t, e.onerror = r, document.body.appendChild(e);
 }), d = async (n) => ({
@@ -13,10 +13,10 @@ const c = (n) => new Promise((t, r) => {
           r?.change({ _$p: t });
         }
       }
-    }, o = document.getElementById(n.f.name("root"));
-    return (async (a) => {
-      await c(`${n.f.path("/script/game.js")}`), r?.add({ $d: t.data.curr.data, el: a });
-    })(o), e;
+    }, c = document.getElementById(n.f.name("root"));
+    return (async (o) => {
+      await s(`${((a) => (location.host.includes("localhost") && (a = a.replace("/src", "/")), a))(n.f.path("/script/game.js"))}`), r?.add({ $d: t.data.curr.data, el: o });
+    })(c), e;
   }
 });
 export {
