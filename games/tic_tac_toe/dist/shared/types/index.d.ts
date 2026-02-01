@@ -5,6 +5,7 @@ type _p_TYP = {
             name: string;
             run_from: any;
         }) => any;
+        path: (v: string) => string;
     };
 };
 type _$p_TYP = {
