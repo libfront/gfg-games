@@ -12946,7 +12946,7 @@ function(_0x48602b) {
 
 	//set..
 	(() => {
-	if ([`localhost`,/*`libfront.github.io`*/,`gforgame.com`].indexOf(location.hostname)==-1) {
+	if ([`localhost`,`libfront.github.io`,`gforgame.com`].indexOf(location.hostname)==-1) {
 		//window.location.href = ``;
 		throw new Error("");
 	}
