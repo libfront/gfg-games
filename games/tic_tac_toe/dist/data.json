@@ -1,1 +1,23 @@
-{"config":{"lazy_lib":{"renderer_src":"https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/renderer.es.js","hydrator_src":"https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/hydrator.es.js","editor_src":"https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/editor.es.js"}},"data":{"l":[{"id":"2bc8c-tic_tac_toe","type":"tic_tac_toe","slug":"tic_tac_toe","data":{"data":"","theme":"light","foo":""}}]}}
+{
+    "config": {
+        "lazy_lib": {
+            "renderer_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/renderer.es.js",
+            "hydrator_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/hydrator.es.js",
+            "editor_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/editor.es.js"
+        }
+    },
+    "data": {
+        "l": [
+            {
+                "id": "2bc8c-tic_tac_toe",
+                "type": "tic_tac_toe",
+                "slug": "tic_tac_toe",
+                "data": {
+                    "data": "",
+                    "theme": "light",
+                    "foo": ""
+                }
+            }
+        ]
+    }
+}

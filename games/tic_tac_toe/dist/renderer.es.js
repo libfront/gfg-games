@@ -39,7 +39,7 @@ const s = async (t) => ({
     head: ` 
 
                 <!--base href="https://yourdomain.com/assets/"-->
-                <base href='${t.f.path("")}'>
+                <!--base href='${t.f.path("")}'-->
 
 
 
