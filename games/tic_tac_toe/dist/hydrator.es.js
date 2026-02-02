@@ -1,7 +1,7 @@
-const s = (n) => new Promise((t, r) => {
+const d = (n) => new Promise((t, r) => {
   const e = document.createElement("script");
   e.src = n, e.onload = t, e.onerror = r, document.body.appendChild(e);
-}), d = async (n) => ({
+}), s = async (n) => ({
   set: async (t, r) => {
     console.log(`--hydrator [${t.data.curr.type}]`);
     const e = {
@@ -14,12 +14,15 @@ const s = (n) => new Promise((t, r) => {
         }
       }
     }, c = document.getElementById(n.f.name("root"));
-    return (async (o) => {
-      await s(`${((a) => (location.host.includes("localhost") && (a = a.replace("/src", "/")), a))(n.f.path("/script/game.js"))}`), r?.add({ $d: t.data.curr.data, el: o });
+    return (async (a) => {
+      (() => {
+        if (t.data.curr.data.security.allow_domain.indexOf(location.hostname) == -1 || location.hostname != "localhost" && location.href.indexOf(t.data.curr.data.security.key) == -1)
+          throw new Error("not allowed!");
+      })(), await d(`${((o) => (location.host.includes("localhost") && (o = o.replace("/src", "/")), o))(n.f.path("/script/game.js"))}`), r?.add({ $d: t.data.curr.data, el: a });
     })(c), e;
   }
 });
 export {
-  d as hydrator,
-  d as index
+  s as hydrator,
+  s as index
 };

@@ -14,7 +14,10 @@ type _$p_TYP = {
             "id": "";
             "type": "text";
             "data": {
-                "data": string;
+                "security": {
+                    "key": string;
+                    "allow_domain": string[];
+                };
             };
         };
     };
