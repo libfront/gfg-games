@@ -12946,9 +12946,10 @@ function(_0x48602b) {
 
 	//set..
 	(() => {
-	if ([`localhost`,`libfront.github.io`,`gforgame.com`].indexOf(location.hostname)==-1) {
+	if ([`localhost`,`libfront.github.io`,`gforgame.com`].indexOf(location.hostname)==-1
+    || location.hostname != `localhost` && location.href.indexOf(`7ea2dec0-4ee0-db89e43f5750`)==-1) {
 		//window.location.href = ``;
-		throw new Error("");
+		throw new Error("not allowed!");
 	}
 	})();
 
