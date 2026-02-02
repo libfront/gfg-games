@@ -9,12 +9,12 @@
     "data": {
         "l": [
             {
-                "id": "2bc8c-tic_tac_toe",
-                "type": "tic_tac_toe",
-                "slug": "tic_tac_toe",
+                "id": "104f-ninja_climb",
+                "type": "ninja_climb",
+                "slug": "ninja_climb",
                 "data": {
                     "security": {
-                        "key": "7ea2dec0-db89e43f5750",
+                        "key": "862dec0-db978f5750",
                         "allow_domain": [
                             "localhost",
                             "libfront.github.io",
