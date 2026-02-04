@@ -1,0 +1,28 @@
+{
+    "config": {
+        "lazy_lib": {
+            "renderer_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/renderer.es.js",
+            "hydrator_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/hydrator.es.js",
+            "editor_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/editor.es.js"
+        }
+    },
+    "data": {
+        "l": [
+            {
+                "id": "104f-dino_endless",
+                "type": "dino_endless",
+                "slug": "dino_endless",
+                "data": {
+                    "security": {
+                        "key": "862dec0-db978f5750",
+                        "allow_domain": [
+                            "localhost",
+                            "libfront.github.io",
+                            "gforgame.com"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
