@@ -1,0 +1,28 @@
+{
+    "config": {
+        "lazy_lib": {
+            "renderer_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/renderer.es.js",
+            "hydrator_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/hydrator.es.js",
+            "editor_src": "https://cdn.jsdelivr.net/gh/libfront/gfg-games@latest/games/{*}/dist/editor.es.js"
+        }
+    },
+    "data": {
+        "l": [
+            {
+                "id": "2bc8c-hyperspeed_ball",
+                "type": "hyperspeed_ball",
+                "slug": "hyperspeed_ball",
+                "data": {
+                    "security": {
+                        "key": "7ea2dec0-db89e43f5750",
+                        "allow_domain": [
+                            "localhost",
+                            "libfront.github.io",
+                            "gforgame.com"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
