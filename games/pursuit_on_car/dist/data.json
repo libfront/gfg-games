@@ -1,0 +1,28 @@
+{
+    "config": {
+        "lazy_lib": {
+            "renderer_src": "https://libfront.github.io/gfg-games/games/{*}/dist/renderer.es.js",
+                "hydrator_src": "https://libfront.github.io/gfg-games/games/{*}/dist/hydrator.es.js",
+                "editor_src": "https://libfront.github.io/gfg-games/games/{*}/dist/editor.es.js"
+        }
+    },
+    "data": {
+        "l": [
+            {
+                "id": "104f-pursuit_on_car",
+                "type": "pursuit_on_car",
+                "slug": "pursuit_on_car",
+                "data": {
+                    "security": {
+                        "key": "862dec0-db978f5750",
+                        "allow_domain": [
+                            "localhost",
+                            "libfront.github.io",
+                            "gforgame.com"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
