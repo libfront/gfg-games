@@ -1,10 +1,10 @@
-const l = (t) => new Promise((e, n) => {
+const l = (t) => new Promise((e, a) => {
   const o = document.createElement("script");
-  o.src = t, o.onload = e, o.onerror = n, document.body.appendChild(o);
+  o.src = t, o.onload = e, o.onerror = a, document.body.appendChild(o);
 }), d = async (t) => ({
   set: async (e) => {
     console.log(`--hydrator [${e.data.curr.type}]`);
-    const n = {
+    const a = {
       r: "",
       style: "",
       //set..
@@ -19,16 +19,16 @@ const l = (t) => new Promise((e, n) => {
         }
       }
     }, o = document.getElementById(t.f.name("root"));
-    return (async (r) => {
+    return (async (n) => {
       (() => {
         if (e.data.curr.data.security.allow_domain.indexOf(location.hostname) == -1 || location.hostname != "localhost" && location.href.indexOf(e.data.curr.data.security.key) == -1)
           throw new Error("not allowed!");
-      })();
+      })(), location.host.includes("localhost") ? window.baseUrl = `${t.f.path("/").replace("/src", "")}` : window.baseUrl = `${t.f.path("/")}`;
       const c = [
         "/script/game.js"
       ];
       for (const s of c)
-        await l(`${((a) => (location.host.includes("localhost") && (a = a.replace("/src", "")), a))(t.f.path(s))}`);
+        await l(`${((r) => (location.host.includes("localhost") && (r = r.replace("/src", "")), r))(t.f.path(s))}`);
       t.f.call("msg", {
         type: "add",
         _p: t,
@@ -36,9 +36,9 @@ const l = (t) => new Promise((e, n) => {
         custom: {},
         //set..
         $d: e.data.curr.data,
-        el: r
+        el: n
       });
-    })(o), n;
+    })(o), a;
   }
 });
 export {

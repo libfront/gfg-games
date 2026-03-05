@@ -1016,7 +1016,8 @@ function createUnityInstance(t, n, d) {
                 return new Promise(function(i, e) {
                     var a = document.createElement("script");
 
-                    a.src = `/script/unityFramework.js`, a.onload = function() {
+                    a.src = `${window.baseUrl}/script/unityFramework.js`
+                    , a.onload = function() {
                     //a.src = s, a.onload = function() {
                         //alert(a.src);
                         if ("undefined" == typeof unityFramework || !unityFramework) {

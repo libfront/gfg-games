@@ -7,7 +7,9 @@ const backgroundFileName = "";
 
 
 //set..
-const buildUrl = "Build";
+const buildUrl = `${window.baseUrl}/Build`; // "Build";
+console.log(window.baseUrl);
+
 const loaderUrl = buildUrl + "/255f2b5875899e334101eb9ff3c0b277.loader.js";
 const config = {
     dataUrl: buildUrl + "/9241caaced77caa5625fc95fb1d3ce43.data.unityweb",
