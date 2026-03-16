@@ -29,6 +29,14 @@ THE SOFTWARE.
 
 */
 'use strict';
+
+//set..
+let window = self;
+window[`GameAnalytics`] = {};
+window[`gameanalytics`] = {};
+//all done..
+
+
 (function(global, factory) {
     typeof exports === "object" && typeof module !== "undefined" ? factory(exports) : typeof define === "function" && define.amd ? define(["exports"], factory) : (global = global || self,
     factory(global.glMatrix = {}))
@@ -49312,6 +49320,10 @@ self["C3_Shaders"]["hsladjust"] = {
 
         initialize() {
             var VERSION = "3.0.8";
+
+            
+             
+            
 
             if (typeof window["GameAnalytics"]["initialize"] == "function") {
                 var ga = window["GameAnalytics"];

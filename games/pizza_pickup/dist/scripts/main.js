@@ -4063,7 +4063,20 @@
             super(iRuntime,
                 DOM_COMPONENT_ID);
             const handler = name => [name, data => this._CallMethod(name, data)];
-            this.AddRuntimeMessageHandlers([handler("CreateBannerAdvert"), handler("ShowBannerAdvert"), handler("HideBannerAdvert"), handler("CreateInterstitialAdvert"), handler("ShowInterstitialAdvert"), handler("CreateVideoAdvert"), handler("ShowVideoAdvert"), handler("Configure"), handler("RequestConsent"), handler("SetUserPersonalisation"), handler("SetMaxAdContentRating"), handler("TagForChildDirectedTreatment"), handler("TagForUnderAgeOfConsent"),
+            this.AddRuntimeMessageHandlers([
+                /* handler("CreateBannerAdvert"), */
+                handler("ShowBannerAdvert"),
+                handler("HideBannerAdvert"), 
+                /* handler("CreateInterstitialAdvert"), */
+                handler("ShowInterstitialAdvert"), 
+                handler("CreateVideoAdvert"), 
+                handler("ShowVideoAdvert"), 
+                /* handler("Configure"), */
+                handler("RequestConsent"), 
+                handler("SetUserPersonalisation"), 
+                handler("SetMaxAdContentRating"), 
+                handler("TagForChildDirectedTreatment"), 
+                handler("TagForUnderAgeOfConsent"),
                 handler("RequestIDFA")
             ])
         }
