@@ -9,9 +9,9 @@
     "data": {
         "l": [
             {
-                "id": "2bc8c-basketball_challenge",
-                "type": "basketball_challenge",
-                "slug": "basketball_challenge",
+                "id": "2bc8c-subway_surf",
+                "type": "subway_surf",
+                "slug": "subway_surf",
                 "data": {
                     "security": {
                         "key": "7ea2dec0-db89e43f5750",
